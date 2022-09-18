@@ -1,0 +1,13 @@
+#home {
+    background-image: url('../../assets/images/landingpage-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 0 20em;
+}

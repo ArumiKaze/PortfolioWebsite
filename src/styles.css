@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0; 
+}
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.light-mode-text {
+    color: #23191E;
+}
+
+.dark-mode-text {
+    color: #C6C2B6;
+}
+
+.light-mode-bg {
+    background-color: #C6C2B6;
+}
+
+.dark-mode-bg {
+    background-color: #23191E;
+}

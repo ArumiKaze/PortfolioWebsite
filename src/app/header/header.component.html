@@ -1,0 +1,15 @@
+<nav class="container" [ngClass]="isDarkMode ? 'dark-mode-bg' : 'light-mode-bg'">
+    <div class="logo"></div>
+
+    <ul class="navbar" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <label class="switch">
+        <input type="checkbox">
+        <span (click)="ToggleDarkMode()" class="slider" [ngClass]="{'slider-light': !isDarkMode}"></span>
+    </label>
+</nav>
