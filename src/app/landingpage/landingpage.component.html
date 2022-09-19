@@ -1,7 +1,8 @@
-<div id="home">
+<div id="home" [ngClass]="isDarkMode ? 'dark-mode-bg dark-mode-text' : 'light-mode-bg light-mode-text'">
     <h1>Eisaku Imura</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum eligendi facilis!
-        Animi nobis neque sunt amet quia laudantium eum recusandae quos! Eaque nemo accusantium ipsa,
-        deserunt quae sit eos!
-    </p>
+    <p class="job-title">R&D Programmer | Front-End Web Developer</p>
+    <button type="button" (click)="ScrollToAboutSection()" [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">
+        <p class="button-title">Explore</p>
+        <p class="button-arrow">🡫</p>
+    </button>
 </div>

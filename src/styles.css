@@ -7,6 +7,7 @@ html, body{
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
     box-sizing: border-box;
+    background-color: #23191E;
 }
 
 .light-mode-text {
@@ -23,4 +24,12 @@ html, body{
 
 .dark-mode-bg {
     background-color: #23191E;
+}
+
+.light-mode-button-border {
+    border: 0.2rem solid #23191E;
+}
+
+.dark-mode-button-border {
+    border: 0.2rem solid #C6C2B6;
 }

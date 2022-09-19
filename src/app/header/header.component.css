@@ -7,11 +7,38 @@
     width: 100%;
     height: auto;
     padding: 1rem 0;
+    z-index: 1;
+}
+
+.container-dark {
+    box-shadow: 0 0 10px 1px #C6C2B6;
+}
+
+.container-light {
+    box-shadow: 0 0 10px 1px #23191E;
 }
 
 .logo {
     width: 6rem;
     margin-right: auto;
+    margin-left: 2rem;
+}
+
+.logo button {
+  appearance: none;
+  background-color: transparent;
+  border-radius: 0.5em;
+  padding: 0.2em 1em;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 0.3s cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+}
+
+.logo button:hover {
+  background-color: rgb(39, 96, 141, 0.25);
+  border: 0.1em solid #27608D;
 }
 
 .navbar {
@@ -28,11 +55,13 @@
 .navbar > li {
     list-style: none;
     padding: 0 2rem;
-}
-
-.navbar a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+
+.navbar > li:hover {
+    color: #8F1D21;
 }
 
 .switch {

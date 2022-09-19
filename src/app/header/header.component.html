@@ -1,11 +1,13 @@
-<nav class="container" [ngClass]="isDarkMode ? 'dark-mode-bg' : 'light-mode-bg'">
-    <div class="logo"></div>
+<nav class="container" [ngClass]="isDarkMode ? 'dark-mode-bg container-dark' : 'light-mode-bg container-light'">
+    <a href="../../assets/resumeEisakuImura.pdf" target="_blank" class="logo">
+        <button type="button" [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">Resume</button>
+    </a>
 
     <ul class="navbar" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a (click)="ScrollToSection('home')">Home</a></li>
+        <li><a (click)="ScrollToSection('about')">About</a></li>
+        <li><a (click)="ScrollToSection('projects')">Projects</a></li>
+        <li><a (click)="ScrollToSection('contact')">Contact</a></li>
     </ul>
 
     <label class="switch">
