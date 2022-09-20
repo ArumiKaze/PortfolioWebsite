@@ -1,7 +1,14 @@
 <nav class="container" [ngClass]="isDarkMode ? 'dark-mode-bg container-dark' : 'light-mode-bg container-light'">
-    <a href="../../assets/resumeEisakuImura.pdf" target="_blank" class="logo">
-        <button type="button" [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">Resume</button>
-    </a>
+    <div class="logo">
+        <a href="../../assets/resumeEisakuImura.pdf" target="_blank">
+            <button type="button" [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">Resume</button>
+        </a>
+        <div class="social-media">
+            <a href="https://github.com/ArumiKaze" target="_blank"><img src="../../assets/images/logos/github-logo.svg" [ngClass]="isDarkMode ? 'dark-mode-logo' : 'light-mode-logo'"></a>
+            <a href="https://www.linkedin.com/in/eisakuimura/" target="_blank"><img src="../../assets/images/logos/linkedin-logo.svg" [ngClass]="isDarkMode ? 'dark-mode-logo' : 'light-mode-logo'"></a>
+            <a href="https://twitter.com/ArumiKaze" target="_blank"><img src="../../assets/images/logos/twitter-logo.svg" [ngClass]="isDarkMode ? 'dark-mode-logo' : 'light-mode-logo'"></a>
+        </div>
+    </div>
 
     <ul class="navbar" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
         <li><a (click)="ScrollToSection('home')">Home</a></li>

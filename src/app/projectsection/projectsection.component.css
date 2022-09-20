@@ -1,0 +1,117 @@
+#projects {
+    scroll-margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 15rem;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background-color: #8F1D21;
+    left: -110%;
+    top: 50%;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background-color: #8F1D21;
+    right: -110%;
+    top: 50%;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    width: 70%;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 40rem;
+    height: 23rem;
+    border-radius: 0.5rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: 0.5s cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.image-container:hover .overlay {
+    opacity: 0.9;
+}
+
+.project-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size: 3.5rem;
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    color: #8F1D21;
+    transition: 0.5s cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.image-container:hover .project-title {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.project-detail-button {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.2em;
+    padding: 0.2em 1em;
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.5s cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+}
+
+.project-detail-button:hover {
+    background-color: rgb(39, 96, 141, 0.25);
+    border: 0.1em solid #27608D;
+}
+
+.image-container:hover .project-detail-button {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
