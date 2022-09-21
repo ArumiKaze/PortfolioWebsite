@@ -1,0 +1,104 @@
+#contact {
+    scroll-margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15rem;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 15rem;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background-color: #8F1D21;
+    left: -110%;
+    top: 50%;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background-color: #8F1D21;
+    right: -110%;
+    top: 50%;
+}
+
+p {
+    font-size: 2rem;
+    margin-bottom: 4em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section {
+    margin: 2rem 0;
+}
+
+input {
+    font-size: 2rem;
+    padding: 0.5em;
+    width: 30em;
+    border-radius: 0.3em;
+    transition: 1s cubic-bezier(.23, 1, 0.32, 1);
+}
+
+input.ng-invalid.ng-touched {
+    border-color: #8F1D21;
+    border-style: solid;
+}
+
+.form-error-text {
+    color: #8F1D21;
+    font-size: 2rem;
+    height: 0.1em;
+}
+
+#message {
+    resize: none;
+    font-size: 2rem;
+    padding: 0.5em;
+    width: 30em;
+    height: 10em;
+    border-radius: 0.3em;
+    transition: 1s cubic-bezier(.23, 1, 0.32, 1);
+}
+
+#message.ng-invalid.ng-touched {
+    border-color: #8F1D21;
+    border-style: solid;
+}
+
+button {
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.2em;
+    padding: 0.2em 1em;
+    margin-top: 2em;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.3s cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+}
+
+button:hover {
+    background-color: rgb(39, 96, 141, 0.25);
+    border: 0.1em solid #27608D;
+}

@@ -1,0 +1,25 @@
+<div id="contact">
+    <h1 [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Contact</h1>
+    <p [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Have a question or just want to say hi?</p>
+    <form [formGroup]="formContact" (ngSubmit)="SubmitContact()">
+        <div class="form-section">
+            <input id="name" type="text" formControlName="formName" placeholder="Name" [ngClass]="isDarkMode ? 'dark-mode-button-border' : 'light-mode-button-border'">
+            <div class="form-error-text">
+                <div *ngIf="formContact.get('formName')?.invalid && formContact.get('formName')?.touched" @inOutPaneAnimation>Please enter a name</div>
+            </div>
+        </div>
+        <div class="form-section">
+            <input id="email" type="text" formControlName="formEmail" placeholder="Email" [ngClass]="isDarkMode ? 'dark-mode-button-border' : 'light-mode-button-border'">
+            <div class="form-error-text">
+                <div *ngIf="formContact.get('formEmail')?.invalid && formContact.get('formEmail')?.touched" @inOutPaneAnimation>Please enter a valid email</div>
+            </div>
+        </div>
+        <div class="form-section">
+            <textarea name="" id="message" formControlName="formMessage" placeholder="Message" [ngClass]="isDarkMode ? 'dark-mode-button-border' : 'light-mode-button-border'"></textarea>
+            <div class="form-error-text">
+                <div *ngIf="formContact.get('formMessage')?.invalid && formContact.get('formMessage')?.touched" @inOutPaneAnimation>Please enter a message</div>
+            </div>
+        </div>
+        <button type="submit" [disabled]="!formContact.valid" [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">Submit</button>
+    </form>
+</div>

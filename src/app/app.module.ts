@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { AboutsectionComponent } from './aboutsection/aboutsection.component';
 import { ProjectsectionComponent } from './projectsection/projectsection.component';
+import { ContactsectionComponent } from './contactsection/contactsection.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { ProjectsectionComponent } from './projectsection/projectsection.compone
     HeaderComponent,
     LandingpageComponent,
     AboutsectionComponent,
-    ProjectsectionComponent
+    ProjectsectionComponent,
+    ContactsectionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

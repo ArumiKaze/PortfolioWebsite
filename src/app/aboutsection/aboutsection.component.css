@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15rem;
 }
 
 h1 {
@@ -38,7 +39,6 @@ h1::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15rem;
 }
 
 .about-content img {
