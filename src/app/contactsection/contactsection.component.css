@@ -102,3 +102,9 @@ button:hover {
     background-color: rgb(39, 96, 141, 0.25);
     border: 0.1em solid #27608D;
 }
+
+button:disabled {
+    background-color: rgb(143, 29, 33, 0.25);
+    border: 0.1em solid #8F1D21;
+    cursor: not-allowed;
+}
