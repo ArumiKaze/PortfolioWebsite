@@ -1,0 +1,23 @@
+<div class="project-container">
+    <h1 [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Last of Us Part I</h1>
+    <p class="text-primary" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Reiciendis ea atque distinctio dicta esse voluptate, t
+        emporibus nemo nesciunt aliquid necessitatibus repellendus! Veniam sed tenetur, quos facilis sapiente omnis
+        accusantium. Ipsa.</p>
+    <div class="project-details" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        <img src="../../assets/images/projects/project-t1x.jpg" alt="lastofuspart1" class="main-image">
+        <div class="project-description">
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione natus dolorem,
+                esse quae minus,
+                maiores cupiditate nostrum eveniet voluptatem, optio illo nam provident iste hic eligendi inventore quas
+                laudantium sunt?</p>
+            <br>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione natus dolorem,
+                esse quae minus,
+                maiores cupiditate nostrum eveniet voluptatem, optio illo nam provident iste hic eligendi inventore quas
+                laudantium sunt?</p>
+        </div>
+    </div>
+    <button type="button" class="back-button" (click)="BackToProjectList()"
+        [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">Back</button>
+</div>

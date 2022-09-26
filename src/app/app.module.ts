@@ -10,6 +10,7 @@ import { ProjectsectionComponent } from './projectsection/projectsection.compone
 import { ContactsectionComponent } from './contactsection/contactsection.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LastofuspartoneComponent } from './projects/lastofuspartone/lastofuspartone.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LandingpageComponent,
     AboutsectionComponent,
     ProjectsectionComponent,
-    ContactsectionComponent
+    ContactsectionComponent,
+    LastofuspartoneComponent
   ],
   imports: [
     BrowserModule,

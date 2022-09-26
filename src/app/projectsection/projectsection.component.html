@@ -1,53 +1,66 @@
 <div id="projects">
     <h1 [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Projects</h1>
-    <div class="project-content">
-        <div class="image-container">
-            <img src="../../assets/images/projects/project-t1x.jpg" alt="lastofuspart1">
-            <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
-            <p class="project-title">The Last of Us Part I</p>
-            <button class="project-detail-button" type="button" [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
+    <div [ngSwitch]="currentSelectedProject" class="project-content">
+        <div *ngSwitchCase="''" class="project-list" @inOutPaneAnimation>
+            <div class="image-container">
+                <img src="../../assets/images/projects/project-t1x.jpg" alt="lastofuspart1">
+                <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
+                <p class="project-title">The Last of Us Part I</p>
+                <button class="project-detail-button" type="button" (click)="ViewProject('t1x')"
+                    [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
+            </div>
+            <div class="image-container">
+                <img src="../../assets/images/projects/project-mindful.jpg" alt="mindful">
+                <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
+                <p class="project-title">Mindful</p>
+                <button class="project-detail-button" type="button"
+                    [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
+            </div>
+            <div class="image-container">
+                <img src="../../assets/images/projects/project-big4r.jpg" alt="uncharted collection">
+                <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
+                <p class="project-title">Uncharted: Legacy of Thieves Collection</p>
+                <button class="project-detail-button" type="button"
+                    [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
+            </div>
+            <div class="image-container">
+                <img src="../../assets/images/projects/project-shinguru.jpg" alt="shinguru">
+                <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
+                <p class="project-title">Shinguru</p>
+                <button class="project-detail-button" type="button"
+                    [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
+            </div>
+            <div class="image-container">
+                <img src="../../assets/images/projects/project-t2.jpg" alt="lastofuspart2">
+                <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
+                <p class="project-title">The Last of Us Part 2</p>
+                <button class="project-detail-button" type="button"
+                    [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
+            </div>
+            <div class="image-container">
+                <img src="../../assets/images/projects/project-shroommates.png" alt="shroommates">
+                <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
+                <p class="project-title">Shroommates</p>
+                <button class="project-detail-button" type="button"
+                    [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
+            </div>
+            <div class="image-container">
+                <img src="../../assets/images/projects/project-sengoku.jpg" alt="sengokurhythm">
+                <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
+                <p class="project-title">Sengoku Rhythm</p>
+                <button class="project-detail-button" type="button"
+                    [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
+            </div>
+            <div class="image-container">
+                <img src="../../assets/images/projects/project-talchul.png" alt="talchul">
+                <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
+                <p class="project-title">Talchul</p>
+                <button class="project-detail-button" type="button"
+                    [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
+            </div>
         </div>
-        <div class="image-container">
-            <img src="../../assets/images/projects/project-mindful.jpg" alt="mindful">
-            <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
-            <p class="project-title">Mindful</p>
-            <button class="project-detail-button" type="button" [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
-        </div>
-        <div class="image-container">
-            <img src="../../assets/images/projects/project-big4r.jpg" alt="uncharted collection">
-            <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
-            <p class="project-title">Uncharted: Legacy of Thieves Collection</p>
-            <button class="project-detail-button" type="button" [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
-        </div>
-        <div class="image-container">
-            <img src="../../assets/images/projects/project-shinguru.jpg" alt="shinguru">
-            <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
-            <p class="project-title">Shinguru</p>
-            <button class="project-detail-button" type="button" [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
-        </div>
-        <div class="image-container">
-            <img src="../../assets/images/projects/project-t2.jpg" alt="lastofuspart2">
-            <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
-            <p class="project-title">The Last of Us Part 2</p>
-            <button class="project-detail-button" type="button" [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
-        </div>
-        <div class="image-container">
-            <img src="../../assets/images/projects/project-shroommates.png" alt="shroommates">
-            <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
-            <p class="project-title">Shroommates</p>
-            <button class="project-detail-button" type="button" [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
-        </div>
-        <div class="image-container">
-            <img src="../../assets/images/projects/project-sengoku.jpg" alt="sengokurhythm">
-            <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
-            <p class="project-title">Sengoku Rhythm</p>
-            <button class="project-detail-button" type="button" [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
-        </div>
-        <div class="image-container">
-            <img src="../../assets/images/projects/project-talchul.png" alt="talchul">
-            <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
-            <p class="project-title">Talchul</p>
-            <button class="project-detail-button" type="button" [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
+        <div *ngSwitchCase="'t1x'" @inOutPaneAnimation>
+            <app-lastofuspartone (backToProjectList)="ReturnToProjectList()"></app-lastofuspartone>
         </div>
     </div>
 </div>

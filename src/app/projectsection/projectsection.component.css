@@ -36,12 +36,15 @@ h1::after {
 }
 
 .project-content {
+    width: 70%;
+    position: relative;
+}
+
+.project-list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
-    width: 70%;
 }
 
 .image-container {
@@ -109,7 +112,7 @@ h1::after {
 
 .project-detail-button:hover {
     background-color: rgb(39, 96, 141, 0.25);
-    border: 0.1em solid #27608D;
+    border: 0.2rem solid #27608D;
 }
 
 .image-container:hover .project-detail-button {

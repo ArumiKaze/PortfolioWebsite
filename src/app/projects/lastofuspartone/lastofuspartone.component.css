@@ -1,0 +1,61 @@
+.project-container {
+    margin-top: -10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button {
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.2em;
+    padding: 0.2em 1em;
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: 0.5s cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    margin-top: 5rem;
+}
+
+.back-button:hover {
+    background-color: rgb(39, 96, 141, 0.25);
+    border: 0.2rem solid #27608D;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 1em;
+}
+
+.main-image {
+    width: 40rem;
+    height: 23rem;
+    border-radius: 0.5rem;
+}
+
+.text-primary {
+    font-size: 2rem;
+    width: 70rem;
+    margin-bottom: 5rem;
+}
+
+.text-secondary {
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    width: 70rem;
+}
+
+.project-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
