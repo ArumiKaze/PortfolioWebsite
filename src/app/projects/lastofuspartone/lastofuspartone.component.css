@@ -38,13 +38,14 @@ h1 {
 .text-primary {
     font-size: 2rem;
     width: 70rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .text-secondary {
     font-size: 1.5rem;
     margin-left: 4rem;
-    width: 70rem;
+    width: 50rem;
+    line-height: 1.5em;
 }
 
 .project-details {
@@ -58,4 +59,14 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.project-link {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.project-link a {
+    text-decoration: none;
+    color: #27608D;
 }

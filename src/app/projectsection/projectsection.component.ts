@@ -19,7 +19,7 @@ import { GeneralService } from '../general.service';
       transition(":leave", [
         style({ opacity: 1, transform: "translateX(0)", position: "absolute", top: 0 }),
         animate(
-          "1000ms ease-in-out",
+          "500ms ease-in-out",
           style({ opacity: 0, transform: "translateX(100%)" })
         )
       ])

@@ -1,22 +1,27 @@
 <div class="project-container">
     <h1 [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Last of Us Part I</h1>
-    <p class="text-primary" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Reiciendis ea atque distinctio dicta esse voluptate, t
-        emporibus nemo nesciunt aliquid necessitatibus repellendus! Veniam sed tenetur, quos facilis sapiente omnis
-        accusantium. Ipsa.</p>
+    <p class="text-primary" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        The Last of Us Part I is an AAA action-adventure game released in September 2022 for the Playstation 5. I was a R&D QA Programmer developing 
+        software and tools to improve development and testing workflows.
+    </p>
     <div class="project-details" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
         <img src="../../assets/images/projects/project-t1x.jpg" alt="lastofuspart1" class="main-image">
         <div class="project-description">
-            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione natus dolorem,
-                esse quae minus,
-                maiores cupiditate nostrum eveniet voluptatem, optio illo nam provident iste hic eligendi inventore quas
-                laudantium sunt?</p>
+            <p class="text-secondary">
+                I worked on many different applications by collaborating with developers of all backgrounds from different departments to solve
+                inefficiencies in the workflow. I enhanced Jira functionality by developing Chrome extension tools, added debug features to the
+                studio's proprietary game engine, and created internal webpages which display all performance stats/notes from an automated daily test.
+            </p>
             <br>
-            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione natus dolorem,
-                esse quae minus,
-                maiores cupiditate nostrum eveniet voluptatem, optio illo nam provident iste hic eligendi inventore quas
-                laudantium sunt?</p>
+            <p class="text-secondary">
+                On top of developing tools, I investigated defects in the game, reported/logged issues with detailed reproduction steps including
+                screenshots/videos using Jira, and thoroughly examined fixes that were pushed to ensure a quality product.
+            </p>
         </div>
+    </div>
+    <div class="project-link">
+        <strong [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Link: </strong>
+        <a href="https://direct.playstation.com/en-us/games/pages/the-last-of-us-part-1">https://direct.playstation.com/en-us/games/pages/the-last-of-us-part-1</a>
     </div>
     <button type="button" class="back-button" (click)="BackToProjectList()"
         [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">Back</button>
