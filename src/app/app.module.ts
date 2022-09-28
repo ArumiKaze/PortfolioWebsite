@@ -11,6 +11,7 @@ import { ContactsectionComponent } from './contactsection/contactsection.compone
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LastofuspartoneComponent } from './projects/lastofuspartone/lastofuspartone.component';
+import { MindfulComponent } from './projects/mindful/mindful.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LastofuspartoneComponent } from './projects/lastofuspartone/lastofuspar
     AboutsectionComponent,
     ProjectsectionComponent,
     ContactsectionComponent,
-    LastofuspartoneComponent
+    LastofuspartoneComponent,
+    MindfulComponent
   ],
   imports: [
     BrowserModule,

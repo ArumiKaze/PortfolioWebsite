@@ -1,14 +1,13 @@
-import { trigger, transition, style, animate } from '@angular/animations';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { GeneralService } from 'src/app/general.service';
 
 @Component({
-  selector: 'app-lastofuspartone',
-  templateUrl: './lastofuspartone.component.html',
-  styleUrls: ['./lastofuspartone.component.css']
+  selector: 'app-mindful',
+  templateUrl: './mindful.component.html',
+  styleUrls: ['./mindful.component.css']
 })
-export class LastofuspartoneComponent implements OnInit {
+export class MindfulComponent implements OnInit {
 
   unsubOnDestroy = new Subject<boolean>();
   isDarkMode!: boolean;

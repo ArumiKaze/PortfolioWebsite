@@ -70,3 +70,24 @@ h1 {
     text-decoration: none;
     color: #27608D;
 }
+
+iframe {
+    margin-top: 5rem;
+    width: 64rem;
+    height: 36rem;
+}
+
+.project-gallery {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.project-gallery img {
+    width: 28rem;
+    height: 22rem;
+}

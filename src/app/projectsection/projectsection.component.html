@@ -10,10 +10,10 @@
                     [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
             </div>
             <div class="image-container">
-                <img src="../../assets/images/projects/project-mindful.jpg" alt="mindful">
+                <img src="../../assets/images/projects/mindful/project-mindful.jpg" alt="mindful">
                 <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
                 <p class="project-title">Mindful</p>
-                <button class="project-detail-button" type="button"
+                <button class="project-detail-button" type="button" (click)="ViewProject('mindful')"
                     [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
             </div>
             <div class="image-container">
@@ -61,6 +61,9 @@
         </div>
         <div *ngSwitchCase="'t1x'" @inOutPaneAnimation>
             <app-lastofuspartone (backToProjectList)="ReturnToProjectList()"></app-lastofuspartone>
+        </div>
+        <div *ngSwitchCase="'mindful'" @inOutPaneAnimation>
+            <app-mindful (backToProjectList)="ReturnToProjectList()"></app-mindful>
         </div>
     </div>
 </div>

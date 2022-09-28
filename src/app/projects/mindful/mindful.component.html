@@ -1,0 +1,52 @@
+<div class="project-container">
+    <h1 [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Mindful</h1>
+    <p class="text-primary" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        Mindful was an empathy-driven virtual reality experience.
+        The goal was to create heartfelt immersive worlds that give people opportunities to witness life through the eyes 
+        of another, with the hopes of expanding their views and perspectives.
+    </p>
+    <div class="project-details" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        <img src="../../../assets/images/projects/mindful/project-mindful.jpg" alt="mindful" class="main-image">
+        <div class="project-description">
+            <p class="text-secondary">
+                Mindful provides an opportunity to see the world through the eyes of a young girl named Ana.  Her story 
+                is told through glimpses of her life, narration, and a portal device that leads to three different memories:  A sentimental 
+                return to her childhood, the horrors of war; and the unknown future of retreat.
+            </p>
+            <br>
+            <p class="text-secondary">
+                I lead the programming department and implemented a range of assets that required C++ and or blueprints such as VR player mechanics,
+                animations, world object interactions, and level scripting. On top of that, I introduced and maintained a Perforce server for the
+                studio for the entirety of the project.
+            </p>
+        </div>
+    </div>
+    <iframe src="https://www.youtube.com/embed/cSEQI-kfzCs" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <div class="project-gallery">
+        <img src="../../../assets/images/projects/mindful/1.jpg" alt="mindful-photo-1">
+        <img src="../../../assets/images/projects/mindful/2.jpg" alt="mindful-photo-2">
+        <img src="../../../assets/images/projects/mindful/3.jpg" alt="mindful-photo-3">
+        <img src="../../../assets/images/projects/mindful/4.jpg" alt="mindful-photo-4">
+        <img src="../../../assets/images/projects/mindful/5.jpg" alt="mindful-photo-5">
+        <img src="../../../assets/images/projects/mindful/6.jpg" alt="mindful-photo-6">
+        <img src="../../../assets/images/projects/mindful/7.jpg" alt="mindful-photo-7">
+        <img src="../../../assets/images/projects/mindful/8.jpg" alt="mindful-photo-8">
+        <img src="../../../assets/images/projects/mindful/9.jpg" alt="mindful-photo-9">
+        <img src="../../../assets/images/projects/mindful/10.jpg" alt="mindful-photo-10">
+        <img src="../../../assets/images/projects/mindful/11.jpg" alt="mindful-photo-11">
+        <img src="../../../assets/images/projects/mindful/12.jpg" alt="mindful-photo-12">
+        <img src="../../../assets/images/projects/mindful/14.jpg" alt="mindful-photo-14">
+        <img src="../../../assets/images/projects/mindful/15.jpg" alt="mindful-photo-15">
+        <img src="../../../assets/images/projects/mindful/16.jpg" alt="mindful-photo-16">
+        <img src="../../../assets/images/projects/mindful/17.jpg" alt="mindful-photo-17">
+    </div>
+    <div class="project-link">
+        <strong [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Link: </strong>
+        <a
+            href="https://www.gainproductions.com/mindfulvr" target="_blank">https://www.gainproductions.com/mindfulvr</a>
+    </div>
+    <button type="button" class="back-button" (click)="BackToProjectList()"
+        [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">Back</button>
+</div>
