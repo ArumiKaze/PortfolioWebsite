@@ -10,17 +10,17 @@ import { GeneralService } from '../general.service';
   animations: [
     trigger("inOutPaneAnimation", [
       transition(":enter", [
-        style({ opacity: 0, transform: "translateX(-100%)" }),
+        style({ opacity: 0 }),
         animate(
           "1000ms ease-in-out",
-          style({ opacity: 1, transform: "translateX(0)" })
+          style({ opacity: 1 })
         )
       ]),
       transition(":leave", [
-        style({ opacity: 1, transform: "translateX(0)", position: "absolute", top: 0 }),
+        style({ opacity: 1, position: "absolute", top: 0, left: 0, bottom: 0, right: 0}),
         animate(
           "500ms ease-in-out",
-          style({ opacity: 0, transform: "translateX(100%)" })
+          style({ opacity: 0 })
         )
       ])
     ])
