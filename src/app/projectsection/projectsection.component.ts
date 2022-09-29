@@ -17,7 +17,7 @@ import { GeneralService } from '../general.service';
         )
       ]),
       transition(":leave", [
-        style({ opacity: 1, position: "absolute", top: 0, left: 0, bottom: 0, right: 0}),
+        style({ opacity: 1, position: "absolute", top: 0, left: 0, right: 0}),
         animate(
           "500ms ease-in-out",
           style({ opacity: 0 })

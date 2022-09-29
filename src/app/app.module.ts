@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LastofuspartoneComponent } from './projects/lastofuspartone/lastofuspartone.component';
 import { MindfulComponent } from './projects/mindful/mindful.component';
+import { UnchartedlotcComponent } from './projects/unchartedlotc/unchartedlotc.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MindfulComponent } from './projects/mindful/mindful.component';
     ProjectsectionComponent,
     ContactsectionComponent,
     LastofuspartoneComponent,
-    MindfulComponent
+    MindfulComponent,
+    UnchartedlotcComponent
   ],
   imports: [
     BrowserModule,

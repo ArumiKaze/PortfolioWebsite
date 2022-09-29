@@ -44,6 +44,7 @@ h1::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-end;
     gap: 3rem;
 }
 
@@ -63,8 +64,6 @@ h1::after {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 100%;
     border-radius: 0.5rem;
     opacity: 0;
     transition: 0.5s cubic-bezier(.23, 1, 0.32, 1);
@@ -111,8 +110,8 @@ h1::after {
 }
 
 .project-detail-button:hover {
-    background-color: rgb(39, 96, 141, 0.25);
-    border: 0.2rem solid #27608D;
+    background-color: rgb(143, 29, 33, 0.25);
+    border: 0.2rem solid #8F1D21;
 }
 
 .image-container:hover .project-detail-button {

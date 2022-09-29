@@ -46,7 +46,7 @@
 }
 
 .logo img:hover {
-    filter: invert(30%) sepia(99%) saturate(392%) hue-rotate(162deg) brightness(90%) contrast(87%);
+    filter: invert(11%) sepia(52%) saturate(5821%) hue-rotate(348deg) brightness(92%) contrast(88%);
 }
 
 .logo button {
@@ -62,8 +62,8 @@
 }
 
 .logo button:hover {
-  background-color: rgb(39, 96, 141, 0.25);
-  border: 0.1em solid #27608D;
+    background-color: rgb(143, 29, 33, 0.25);
+    border: 0.2rem solid #8F1D21;
 }
 
 .navbar {

@@ -20,7 +20,7 @@
                 <img src="../../assets/images/projects/project-big4r.jpg" alt="uncharted collection">
                 <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
                 <p class="project-title">Uncharted: Legacy of Thieves Collection</p>
-                <button class="project-detail-button" type="button"
+                <button class="project-detail-button" type="button" (click)="ViewProject('big4r')"
                     [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
             </div>
             <div class="image-container">
@@ -64,6 +64,9 @@
         </div>
         <div *ngSwitchCase="'mindful'" @inOutPaneAnimation>
             <app-mindful (backToProjectList)="ReturnToProjectList()"></app-mindful>
+        </div>
+        <div *ngSwitchCase="'big4r'" @inOutPaneAnimation>
+            <app-unchartedlotc (backToProjectList)="ReturnToProjectList()"></app-unchartedlotc>
         </div>
     </div>
 </div>

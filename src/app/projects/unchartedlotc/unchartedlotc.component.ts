@@ -3,11 +3,11 @@ import { Subject, takeUntil } from 'rxjs';
 import { GeneralService } from 'src/app/general.service';
 
 @Component({
-  selector: 'app-lastofuspartone',
-  templateUrl: './lastofuspartone.component.html',
-  styleUrls: ['./lastofuspartone.component.css']
+  selector: 'app-unchartedlotc',
+  templateUrl: './unchartedlotc.component.html',
+  styleUrls: ['./unchartedlotc.component.css']
 })
-export class LastofuspartoneComponent implements OnInit {
+export class UnchartedlotcComponent implements OnInit {
 
   unsubOnDestroy = new Subject<boolean>();
   isDarkMode!: boolean;
