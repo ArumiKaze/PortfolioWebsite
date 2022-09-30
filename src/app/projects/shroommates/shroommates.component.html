@@ -1,0 +1,36 @@
+<div class="project-container">
+    <h1 [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Shroommates</h1>
+    <p class="text-primary" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        Shroommates was a light-hearted 3D platforming adventure where players solve puzzles through clever use of the environment 
+        and try to get everyone back home safely. The player is a little shroom in a big world—squish down for a powerful jump, parachute 
+        away with the mushroom cap, and climb vines to get to vantage points around the house. Beware of the human chef bent on putting 
+        delicious shrooms on his pizza, and a deadly Shroomba that attacks fungi on sight! 
+    </p>
+    <div class="project-details" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        <img src="../../../assets/images/projects/shroommates/project-shroommates.png" alt="shroommates image" class="main-image">
+        <div class="project-description">
+            <p class="text-secondary">
+                Project was developed in Unreal Engine 4. Programming responsibilities ranged over different tasks such as implementing 
+                the upgrade system, in-game store, interactable items, environmental hazards, player locomotion, and various other 
+                player mechanics using a combination of C++ and blueprints. Constantly communicating with the designers was a crucial 
+                component of development to make sure the mechanics I implemented matched their designs and I exposed specific 
+                functions/variables in blueprints to make sure the designers could fine tune the mechanic without having to go into code.
+            </p>
+        </div>
+    </div>
+    <iframe src="https://www.youtube.com/embed/2jf9_ZemTYg" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <div class="project-gallery">
+        <img src="../../../assets/images/projects/shroommates/1.jpg" alt="shroommates-photo-1">
+        <img src="../../../assets/images/projects/shroommates/2.jpg" alt="shroommates-photo-2">
+        <img src="../../../assets/images/projects/shroommates/3.jpg" alt="shroommates-photo-3">
+    </div>
+    <div class="project-link">
+        <strong [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Link: </strong>
+        <a
+            href="https://banana-shrooms.itch.io/shroommates" target="_blank">https://banana-shrooms.itch.io/shroommates</a>
+    </div>
+    <button type="button" class="back-button" (click)="BackToProjectList()"
+        [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">Back</button>
+</div>

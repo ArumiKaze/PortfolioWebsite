@@ -61,18 +61,17 @@ h1 {
     align-items: flex-start;
 }
 
-.project-link {
-    font-size: 2rem;
-    margin-top: 3rem;
-}
-
-.project-link a {
-    text-decoration: none;
-    color: #467ca7;
-}
-
-iframe {
+.project-gallery {
     margin-top: 5rem;
-    width: 64rem;
-    height: 36rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.project-gallery img {
+    width: 40rem;
+    height: 22rem;
 }

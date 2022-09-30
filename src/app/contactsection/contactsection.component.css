@@ -71,6 +71,7 @@ input.ng-invalid.ng-touched {
 }
 
 #message {
+    font-family: 'Roboto';
     resize: none;
     font-size: 2rem;
     padding: 0.5em;
@@ -99,8 +100,8 @@ button {
 }
 
 button:hover {
-    background-color: rgb(39, 96, 141, 0.25);
-    border: 0.1em solid #27608D;
+    background-color: rgb(70, 124, 167, 0.25);
+    border: 0.1em solid #467ca7;
 }
 
 button:disabled {

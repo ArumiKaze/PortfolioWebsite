@@ -1,0 +1,25 @@
+<div class="project-container">
+    <h1 [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Shinguru</h1>
+    <p class="text-primary" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        Shinguru is an upcoming 2D action-platformer game in which you embody an over-caffeinated mercenary slaying 
+        colossal demons while embarking on a journey through a world that mixes both sci-fi and fantasy. Through narratively driven levels, 
+        fluid combat, and parkour-esque movement, meet characters from all walks of life and learn that no one is ever truly alone when facing 
+        challenges life puts in your way.
+    </p>
+    <div class="project-details" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        <img src="../../../assets/images/projects/shinguru/project-shinguru.jpg" alt="shinguru image" class="main-image">
+        <div class="project-description">
+            <p class="text-secondary">
+                I lead the programming department and implement a wide range of assets that requires C# in Unity. I primarily work on
+                implementing player mechanics such as melee combat, locomotion, wall jumping, ledge climbing, etc. Development is still
+                ongoing.
+            </p>
+        </div>
+    </div>
+    <div class="project-gallery">
+        <img src="../../../assets/images/projects/shinguru/1.jpg" alt="shinguru-photo-1">
+        <img src="../../../assets/images/projects/shinguru/2.jpg" alt="shinguru-photo-2">
+    </div>
+    <button type="button" class="back-button" (click)="BackToProjectList()"
+        [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">Back</button>
+</div>

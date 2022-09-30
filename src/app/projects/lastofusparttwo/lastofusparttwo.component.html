@@ -1,0 +1,33 @@
+<div class="project-container">
+    <h1 [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Last of Us Part II</h1>
+    <p class="text-primary" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        The Last of Us Part II is an AAA action-adventure game released in June 2020 for the Playstation 4. I was a Quality Assurance tester and a Japanese
+        Localization specialist.
+    </p>
+    <div class="project-details" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        <img src="../../../assets/images/projects/project-t2.jpg" alt="lastofuspart2 image" class="main-image">
+        <div class="project-description">
+            <p class="text-secondary">
+                I created, maintained, and executed test cases through TestRail to investigate defects in the game, report/log issues with detailed
+                reproduction steps including screenshots/videos using Jira, and thoroughly tested fixes that were made to ensure a quality product.
+                Eventually, I took full QA ownership and responsibility for multiple levels and systems over multiple project cycles. In addition to that,
+                I also mentored new personnel in quality assurance testing protocols and best practices to meet the studio's high standards.
+            </p>
+            <br>
+            <p class="text-secondary">
+                On top of my quality assurance testing duty, I also worked on the Japanese localization of the game. I ensured quality and accurate translations
+                from English to Japanese in text and voice lines, using a native's level of understanding of both languages along with an intimate knowledge of
+                the game's lore to verify no nuance was lost.
+            </p>
+        </div>
+    </div>
+    <iframe src="https://www.youtube.com/embed/II5UsqP2JAk" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <div class="project-link">
+        <strong [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Link: </strong>
+        <a href="https://direct.playstation.com/en-us/games/game/the-last-of-us-part-ii-ps4.3003180" target="_blank">https://direct.playstation.com/en-us/games/game/the-last-of-us-part-ii-ps4.3003180</a>
+    </div>
+    <button type="button" class="back-button" (click)="BackToProjectList()"
+        [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">Back</button>
+</div>

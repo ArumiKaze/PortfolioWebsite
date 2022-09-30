@@ -13,6 +13,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LastofuspartoneComponent } from './projects/lastofuspartone/lastofuspartone.component';
 import { MindfulComponent } from './projects/mindful/mindful.component';
 import { UnchartedlotcComponent } from './projects/unchartedlotc/unchartedlotc.component';
+import { ShinguruComponent } from './projects/shinguru/shinguru.component';
+import { LastofusparttwoComponent } from './projects/lastofusparttwo/lastofusparttwo.component';
+import { ShroommatesComponent } from './projects/shroommates/shroommates.component';
+import { SengokuComponent } from './projects/sengoku/sengoku.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { UnchartedlotcComponent } from './projects/unchartedlotc/unchartedlotc.c
     ContactsectionComponent,
     LastofuspartoneComponent,
     MindfulComponent,
-    UnchartedlotcComponent
+    UnchartedlotcComponent,
+    ShinguruComponent,
+    LastofusparttwoComponent,
+    ShroommatesComponent,
+    SengokuComponent
   ],
   imports: [
     BrowserModule,

@@ -76,3 +76,18 @@ iframe {
     width: 64rem;
     height: 36rem;
 }
+
+.project-gallery {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.project-gallery img {
+    width: 40rem;
+    height: 22rem;
+}
