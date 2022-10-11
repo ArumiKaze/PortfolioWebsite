@@ -1,4 +1,4 @@
-<div id="projects">
+<section id="projects">
     <h1 [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Projects</h1>
     <div [ngSwitch]="currentSelectedProject" class="project-content">
         <div *ngSwitchCase="''" class="project-list" @inOutPaneAnimation>
@@ -52,10 +52,10 @@
                     [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
             </div>
             <div class="image-container">
-                <img src="../../assets/images/projects/project-talchul.png" alt="talchul">
+                <img src="../../assets/images/projects/talchul/project-talchul.png" alt="talchul">
                 <div class="overlay" [ngClass]="isDarkMode ? 'light-mode-bg' : 'dark-mode-bg'"></div>
                 <p class="project-title">Talchul</p>
-                <button class="project-detail-button" type="button"
+                <button class="project-detail-button" type="button" (click)="ViewProject('talchul')"
                     [ngClass]="isDarkMode ? 'light-mode-text light-mode-button-border': 'dark-mode-text dark-mode-button-border'">Details</button>
             </div>
         </div>
@@ -80,5 +80,8 @@
         <div *ngSwitchCase="'sengoku'" @inOutPaneAnimation>
             <app-sengoku (backToProjectList)="ReturnToProjectList()"></app-sengoku>
         </div>
+        <div *ngSwitchCase="'talchul'" @inOutPaneAnimation>
+            <app-talchul (backToProjectList)="ReturnToProjectList()"></app-talchul>
+        </div>
     </div>
-</div>
+</section>

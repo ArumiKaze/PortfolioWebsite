@@ -4,28 +4,26 @@
         Sengoku Rhythm is a rhythm game where two players fight an honorable Samurai duel by taking turns 
         playing a Taiko and Shakuhachi.
     </p>
-    <div class="project-details" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
-        <img src="../../../assets/images/projects/sengoku/project-sengoku.jpg" alt="sengoku image" class="main-image">
-        <div class="project-description">
-            <p class="text-secondary">
-                The taiko and shakuhachi are simulated using alternative controllers to 
-                play the corresponding notes on the screen scrolling from the right. Warriors will play a series of beats 
-                in the form of tomoe symbols to deal damage to the opposing warrior. If a warrior plays all the notes correctly, 
-                the player will gain a morale boost and deal damage based on how much morale they currently have. On the other hand 
-                if the player misses a note or a couple of notes, the player will lose morale based on how much they missed and deal 
-                damage based on the newly decreased morale. To win the duel, the player with the lowest health will lose either at the 
-                end of the song or when their health is below zero.
-            </p>
-            <br>
-            <p class="text-secondary">
-                To create the Taiko (drums), Arduino and Piezo discs were used to detect vibrations/hits from the player. 
-                Plastic baskets were used to imitate the drums and the discs were inserted under the basket where the player will hit the drum.
-                In addition to the drums, the shakuhachi was also rapidly developed so that the players had to swap back and forth between 
-                the two instruments in combat. The flute used photoresistors (light detectors) to imitate the fingers covering the holes 
-                of the flute. The photoresistors were placed in each of the flute's holes and when the fingers were on top of the 
-                photoresistors, that was deemed as an input and it would hit the corresponding notes that came up.
-            </p>
-        </div>
+    <img src="../../../assets/images/projects/sengoku/project-sengoku.jpg" alt="sengoku image" class="main-image">
+    <div class="project-description" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        <p class="text-secondary">
+            The taiko and shakuhachi are simulated using alternative controllers to 
+            play the corresponding notes on the screen scrolling from the right. Warriors will play a series of beats 
+            in the form of tomoe symbols to deal damage to the opposing warrior. If a warrior plays all the notes correctly, 
+            the player will gain a morale boost and deal damage based on how much morale they currently have. On the other hand 
+            if the player misses a note or a couple of notes, the player will lose morale based on how much they missed and deal 
+            damage based on the newly decreased morale. To win the duel, the player with the lowest health will lose either at the 
+            end of the song or when their health is below zero.
+        </p>
+        <br>
+        <p class="text-secondary">
+            To create the Taiko (drums), Arduino and Piezo discs were used to detect vibrations/hits from the player. 
+            Plastic baskets were used to imitate the drums and the discs were inserted under the basket where the player will hit the drum.
+            In addition to the drums, the shakuhachi was also rapidly developed so that the players had to swap back and forth between 
+            the two instruments in combat. The flute used photoresistors (light detectors) to imitate the fingers covering the holes 
+            of the flute. The photoresistors were placed in each of the flute's holes and when the fingers were on top of the 
+            photoresistors, that was deemed as an input and it would hit the corresponding notes that came up.
+        </p>
     </div>
     <iframe src="https://www.youtube.com/embed/3nDrqtOcw1k" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>

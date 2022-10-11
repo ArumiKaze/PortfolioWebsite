@@ -1,0 +1,35 @@
+<div class="project-container">
+    <h1 [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Talchul</h1>
+    <p class="text-primary" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        Talchul is a top-down stealth game where players are a refugee trying to escape a forced labor camp. As you try to escape, players can 
+        meet other prisoners who join you to increase your ability to scout, but also increase the likelihood you'll be detected by guards. Inspiration for the 
+        game came from current world events that occurred in 2016 and still continues to this day. The original pitch for the game involved spreading 
+        awareness of North Korea's forced labor camps and the name of the game came from the Korean word for "to escape".
+    </p>
+    <img src="../../../assets/images/projects/talchul/project-talchul.png" alt="talchul image" class="main-image">
+    <div class="project-description" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        <p class="text-secondary">
+            I made this simple game purely in Javascript with a small team helping out with the art assets.
+            Talchul is meant to be an endless game. No matter how hard or long the player tries, the player will not be able to escape and it is 
+            meant to reflect the situation in North Korea. You can stay under the radar easier if you lay low but once you start acting out, you 
+            become a bigger target for the regime to put down.
+        </p>
+    </div>
+    <iframe src="https://www.youtube.com/embed/LeOIDRt1qlE" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <div class="project-gallery">
+        <img src="../../../assets/images/projects/talchul/1.jpg" alt="talchul-photo-1">
+        <img src="../../../assets/images/projects/talchul/2.jpg" alt="talchul-photo-2">
+        <img src="../../../assets/images/projects/talchul/3.jpg" alt="talchul-photo-3">
+        <img src="../../../assets/images/projects/talchul/5.jpg" alt="talchul-photo-5">
+        <img src="../../../assets/images/projects/talchul/6.jpg" alt="talchul-photo-6">
+    </div>
+    <div class="project-link">
+        <strong [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Link: </strong>
+        <a
+            href="https://apexwinner.itch.io/talchul" target="_blank">https://apexwinner.itch.io/talchul</a>
+    </div>
+    <button type="button" class="back-button" (click)="BackToProjectList()"
+        [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">Back</button>
+</div>

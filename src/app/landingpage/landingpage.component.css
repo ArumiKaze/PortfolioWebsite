@@ -1,17 +1,26 @@
 #home {
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
+
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "main";
+}
+
+.main {
+    grid-area: main;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 50rem;
+
     text-align: center;
 }
 
-#home h1 {
+.main h1 {
     font-size: 7rem;
     color: #8F1D21;
     font-weight: bold;
@@ -24,7 +33,7 @@
     font-weight: bold;
 }
 
-#home button {
+.main button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +48,7 @@
     user-select: none;
 }
 
-#home button:hover {
+.main button:hover {
     background-color: rgb(143, 29, 33, 0.25);
     border: 0.2rem solid #8F1D21;
 }
@@ -66,5 +75,12 @@
 
     100% {
         transform: translateY(5%);
+    }
+}
+
+@media only screen and (min-width: 57em) {
+    #home {
+        grid-template-areas: 
+        ". main .";
     }
 }

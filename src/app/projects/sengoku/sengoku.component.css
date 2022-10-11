@@ -1,9 +1,16 @@
 .project-container {
-    margin-top: -10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "mainText"
+    "coverArt"
+    "desc"
+    "video"
+    "gallery"
+    "back";
+    place-items: center;
+    gap: 3rem;
 }
 
 .back-button {
@@ -16,7 +23,7 @@
     font-weight: bold;
     transition: 0.5s cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
-    margin-top: 5rem;
+    grid-area: back;
 }
 
 .back-button:hover {
@@ -26,25 +33,23 @@
 
 h1 {
     font-size: 5rem;
-    margin-bottom: 1em;
+    grid-area: title;
 }
 
 .main-image {
     width: 40rem;
     height: 23rem;
     border-radius: 0.5rem;
+    grid-area: coverArt;
 }
 
 .text-primary {
     font-size: 2rem;
-    width: 70rem;
-    margin-bottom: 2rem;
+    grid-area: mainText;
 }
 
 .text-secondary {
     font-size: 1.5rem;
-    margin-left: 4rem;
-    width: 50rem;
     line-height: 1.5em;
 }
 
@@ -59,25 +64,42 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    grid-area: desc;
 }
 
 iframe {
-    margin-top: 5rem;
-    width: 64rem;
-    height: 36rem;
+    width: 40rem;
+    height: 26rem;
+    grid-area: video;
 }
 
 .project-gallery {
-    margin-top: 5rem;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
+    grid-area: gallery;
 }
 
 .project-gallery img {
     width: 35rem;
     height: 22rem;
+}
+
+@media only screen and (min-width: 76em) {
+    iframe {
+        width: 64rem;
+        height: 36rem;
+    }
+
+    .project-container {
+        grid-template-areas: 
+        ". title title ."
+        ". mainText mainText ."
+        ". coverArt  desc ."
+        ". video video ."
+        "gallery gallery gallery gallery"
+        ". back back .";
+    }
 }

@@ -1,15 +1,13 @@
 #about {
-    scroll-margin-top: 7rem;
+    scroll-margin-top: 8rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 15rem;
 }
 
 h1 {
     font-size: 5rem;
-    margin-bottom: 15rem;
     position: relative;
 }
 
@@ -36,30 +34,61 @@ h1::after {
 }
 
 .about-content {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 5rem;
+    grid-template-areas: 
+    ". pic ."
+    ". text .";
+    margin: 20rem 0;
+}
+
+@media only screen and (min-width: 57em) {
+    .about-content {
+        gap: 0;
+        grid-template-areas: 
+        "pic text text"
+        "pic text text"
+        "pic text text";
+    }
+}
+
+@media only screen and (min-width: 76em) {
+    .about-content {
+        gap: 0;
+        grid-template-areas: 
+        ". pic text text ."
+        ". pic text text ."
+        ". pic text text .";
+    }
+}
+
+.profile-pic {
+    grid-area: pic;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 3rem;
 }
 
-.about-content img {
+.profile-pic img {
     width: 40rem;
     height: auto;
     border-radius: 0.5rem;
-    margin-right: 4rem;
 }
 
-.about-content-text {
+.profile-text {
+    grid-area: text;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    width: 70rem;
-    margin-left: 4rem;
+    align-items: center;
     font-size: 2rem;
-    line-height: 4rem;
+    line-height: 3rem;
+    margin: 0 3rem;
 }
 
-.about-content-text a {
+.profile-text a {
     text-decoration: none;
     color: #467ca7;
 }

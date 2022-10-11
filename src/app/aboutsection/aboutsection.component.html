@@ -1,8 +1,10 @@
-<div id="about">
+<section id="about">
     <h1 [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">About</h1>
-    <div class="about-content">
-        <img src="../../assets/images/profile-pic.jpg" alt="picture of Eisaku">
-        <div class="about-content-text" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+    <div class="about-content" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
+        <div class="profile-pic">
+            <img src="../../assets/images/profile-pic.jpg" alt="picture of Eisaku">
+        </div>
+        <div class="profile-text">
             <p>Hello! My name is Eisaku (pronounced 'ey-sah-kuu') and I am a Japanese American Software Engineer in Los Angeles, CA.</p>
             <p>I'm a R&D programmer and front-end web developer working at <a href="https://www.naughtydog.com/" target="_blank">Naughty Dog</a>.</p>
             <br>
@@ -12,4 +14,4 @@
             <p>Thank you for visiting and I hope you enjoy glancing over a couple projects I've done in the past!</p>
         </div>
     </div>
-</div>
+</section>

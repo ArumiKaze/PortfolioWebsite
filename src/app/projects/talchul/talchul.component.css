@@ -54,6 +54,12 @@ h1 {
     line-height: 1.5em;
 }
 
+.project-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .project-description {
     display: flex;
     flex-direction: column;
@@ -80,7 +86,9 @@ iframe {
 }
 
 .project-gallery {
+    margin-top: 5rem;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -89,7 +97,7 @@ iframe {
 }
 
 .project-gallery img {
-    width: 40rem;
+    width: 28rem;
     height: 22rem;
 }
 

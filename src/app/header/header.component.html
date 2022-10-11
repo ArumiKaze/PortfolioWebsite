@@ -1,24 +1,23 @@
 <nav class="container" [ngClass]="isDarkMode ? 'dark-mode-bg container-dark' : 'light-mode-bg container-light'">
     <div class="logo">
-        <a href="../../assets/resumeEisakuImura.pdf" target="_blank">
+        <a href="../../assets/resumeEisakuImura.pdf" target="_blank" class="resume-logo">
             <button type="button" [ngClass]="isDarkMode ? 'dark-mode-text dark-mode-button-border' : 'light-mode-text light-mode-button-border'">Resume</button>
+            <img src="../../assets/images/logos/resume-logo.svg" [ngClass]="isDarkMode ? 'dark-mode-logo' : 'light-mode-logo'">
         </a>
-        <div class="social-media">
-            <a href="https://github.com/ArumiKaze" target="_blank"><img src="../../assets/images/logos/github-logo.svg" [ngClass]="isDarkMode ? 'dark-mode-logo' : 'light-mode-logo'"></a>
-            <a href="https://www.linkedin.com/in/eisakuimura/" target="_blank"><img src="../../assets/images/logos/linkedin-logo.svg" [ngClass]="isDarkMode ? 'dark-mode-logo' : 'light-mode-logo'"></a>
-            <a href="https://twitter.com/ArumiKaze" target="_blank"><img src="../../assets/images/logos/twitter-logo.svg" [ngClass]="isDarkMode ? 'dark-mode-logo' : 'light-mode-logo'"></a>
-        </div>
+        <a href="https://github.com/ArumiKaze" target="_blank"><img src="../../assets/images/logos/github-logo.svg" [ngClass]="isDarkMode ? 'dark-mode-logo' : 'light-mode-logo'"></a>
+        <a href="https://www.linkedin.com/in/eisakuimura/" target="_blank"><img src="../../assets/images/logos/linkedin-logo.svg" [ngClass]="isDarkMode ? 'dark-mode-logo' : 'light-mode-logo'"></a>
+        <a href="https://twitter.com/ArumiKaze" target="_blank"><img src="../../assets/images/logos/twitter-logo.svg" [ngClass]="isDarkMode ? 'dark-mode-logo' : 'light-mode-logo'"></a>
     </div>
 
     <ul class="navbar" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
-        <li><a (click)="ScrollToSection('home')">Home</a></li>
-        <li><a (click)="ScrollToSection('about')">About</a></li>
-        <li><a (click)="ScrollToSection('projects')">Projects</a></li>
-        <li><a (click)="ScrollToSection('contact')">Contact</a></li>
+        <li><a (click)="ScrollToSection('home')" [ngClass]="{'active-section' : currentYPos < aboutSectionYPos - (homeSectionHeight / 3)}">Home</a></li>
+        <li><a (click)="ScrollToSection('about')" [ngClass]="{'active-section' : currentYPos >= aboutSectionYPos - (homeSectionHeight / 3) && currentYPos < projectsSectionYPos - (aboutSectionHeight / 3)}">About</a></li>
+        <li><a (click)="ScrollToSection('projects')" [ngClass]="{'active-section' : currentYPos >= projectsSectionYPos - (aboutSectionHeight / 3) && currentYPos < contactSectionYPos - (projectsSectionHeight / 3)}">Projects</a></li>
+        <li><a (click)="ScrollToSection('contact')" [ngClass]="{'active-section' : currentYPos >= contactSectionYPos - (projectsSectionHeight / 3)}">Contact</a></li>
     </ul>
 
-    <label class="switch">
+    <div class="switch">
         <input type="checkbox">
         <span (click)="ToggleDarkMode()" class="slider" [ngClass]="{'slider-light': !isDarkMode}"></span>
-    </label>
+    </div>
 </nav>

@@ -17,6 +17,7 @@ import { ShinguruComponent } from './projects/shinguru/shinguru.component';
 import { LastofusparttwoComponent } from './projects/lastofusparttwo/lastofusparttwo.component';
 import { ShroommatesComponent } from './projects/shroommates/shroommates.component';
 import { SengokuComponent } from './projects/sengoku/sengoku.component';
+import { TalchulComponent } from './projects/talchul/talchul.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SengokuComponent } from './projects/sengoku/sengoku.component';
     ShinguruComponent,
     LastofusparttwoComponent,
     ShroommatesComponent,
-    SengokuComponent
+    SengokuComponent,
+    TalchulComponent
   ],
   imports: [
     BrowserModule,
