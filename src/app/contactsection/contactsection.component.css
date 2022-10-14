@@ -51,7 +51,7 @@ form {
 input {
     font-size: 2rem;
     padding: 0.5em;
-    width: clamp(15em, 1em + 30vw, 30em);
+    width: clamp(15em, 1em + 40vw, 30em);
     border-radius: 0.3em;
     transition: 1s cubic-bezier(.23, 1, 0.32, 1);
 }
@@ -70,8 +70,11 @@ input.ng-invalid.ng-touched {
 #message {
     font-family: 'Roboto';
     font-size: 2rem;
+    resize: vertical;
     padding: 0.5em;
-    width: clamp(15em, 1em + 30vw, 30em);
+    width: clamp(15em, 1em + 40vw, 30em);
+    max-height: 20em;
+    min-height: 5em;
     height: 10em;
     border-radius: 0.3em;
     transition: 1s cubic-bezier(.23, 1, 0.32, 1);
@@ -87,6 +90,7 @@ button {
     background-color: transparent;
     border-radius: 0.2em;
     padding: 0.2em 1em;
+    margin-top: 1em;
     cursor: pointer;
     font-size: 2rem;
     font-weight: bold;
