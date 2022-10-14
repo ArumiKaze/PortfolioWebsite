@@ -15,10 +15,10 @@ h1::before {
     content: "";
     display: block;
     position: absolute;
-    width: 100%;
+    width: 40%;
     height: 5%;
     background-color: #8F1D21;
-    left: -110%;
+    left: -50%;
     top: 50%;
 }
 
@@ -26,10 +26,10 @@ h1::after {
     content: "";
     display: block;
     position: absolute;
-    width: 100%;
+    width: 40%;
     height: 5%;
     background-color: #8F1D21;
-    right: -110%;
+    right: -50%;
     top: 50%;
 }
 
@@ -51,7 +51,7 @@ form {
 input {
     font-size: 2rem;
     padding: 0.5em;
-    width: 30em;
+    width: clamp(15em, 1em + 30vw, 30em);
     border-radius: 0.3em;
     transition: 1s cubic-bezier(.23, 1, 0.32, 1);
 }
@@ -69,10 +69,9 @@ input.ng-invalid.ng-touched {
 
 #message {
     font-family: 'Roboto';
-    resize: none;
     font-size: 2rem;
     padding: 0.5em;
-    width: 30em;
+    width: clamp(15em, 1em + 30vw, 30em);
     height: 10em;
     border-radius: 0.3em;
     transition: 1s cubic-bezier(.23, 1, 0.32, 1);

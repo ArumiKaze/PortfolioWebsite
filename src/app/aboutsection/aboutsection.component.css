@@ -15,10 +15,10 @@ h1::before {
     content: "";
     display: block;
     position: absolute;
-    width: 100%;
+    width: 60%;
     height: 5%;
     background-color: #8F1D21;
-    left: -110%;
+    left: -70%;
     top: 50%;
 }
 
@@ -26,17 +26,17 @@ h1::after {
     content: "";
     display: block;
     position: absolute;
-    width: 100%;
+    width: 60%;
     height: 5%;
     background-color: #8F1D21;
-    right: -110%;
+    right: -70%;
     top: 50%;
 }
 
 .about-content {
     display: grid;
     grid-auto-columns: 1fr;
-    gap: 5rem;
+    row-gap: 5rem;
     grid-template-areas: 
     ". pic ."
     ". text .";
@@ -72,7 +72,7 @@ h1::after {
 }
 
 .profile-pic img {
-    width: 40rem;
+    width: clamp(30rem, 1rem + 20vw, 40rem);
     height: auto;
     border-radius: 0.5rem;
 }

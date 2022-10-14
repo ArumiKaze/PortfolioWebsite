@@ -21,7 +21,6 @@
 .logo {
     margin-left: 2rem;
     width: 30rem;
-    grid-area: socialmedia;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -78,7 +77,6 @@
 }
 
 .switch {
-    grid-area: lightdarkswitch;
     position: relative;
     width: 30rem;
     height: 3.4rem;
@@ -142,7 +140,6 @@
     }
 
     .navbar {
-        grid-area: navlinks;
         display: flex;
         justify-content: center;
         align-items: center;
