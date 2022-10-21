@@ -22,6 +22,6 @@ export class GeneralService {
   }
 
   SendEmail(emailPayload: string) {
-    return this.http.post("http://localhost:3000/sendEmail", emailPayload, {headers: {'content-type': 'application/json'}});
+    return this.http.post("http://localhost:3001/sendEmail", emailPayload, {headers: {'content-type': 'application/json'}});
   }
 }
