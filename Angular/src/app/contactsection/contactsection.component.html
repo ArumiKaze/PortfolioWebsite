@@ -2,8 +2,8 @@
     <h1 [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">Contact</h1>
     <div class="submit-message" [ngClass]="isDarkMode ? 'dark-mode-text' : 'light-mode-text'">
         <p *ngIf="!successEmailResponse && !failEmailResponse" @inOutMessageAnimation>Have a question or just want to say hi?</p>
-        <p *ngIf="successEmailResponse" @inOutMessageAnimation (@inOutMessageAnimation.start)="ResetMessage()">Email successfully sent!</p>
-        <p *ngIf="failEmailResponse" @inOutMessageAnimation (@inOutMessageAnimation.start)="ResetMessage()">An error occurred. Please try again or manually send an email to: imura.eisaku@gmail.com</p>
+        <p *ngIf="successEmailResponse" @inOutMessageAnimation>Email successfully sent!</p>
+        <p *ngIf="failEmailResponse" @inOutMessageAnimation>An error occurred. Please try again or manually send an email to: imura.eisaku@gmail.com</p>
     </div>
     <form [formGroup]="formContact" (ngSubmit)="SubmitContact()">
         <div class="form-section">

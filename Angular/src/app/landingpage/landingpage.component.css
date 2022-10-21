@@ -25,7 +25,7 @@
     color: #8F1D21;
     font-weight: bold;
     line-height: 0.8em;
-    margin-bottom: 1rem;
+    margin: auto 0 1rem 0;
 }
 
 .job-title {
@@ -39,52 +39,47 @@
     align-items: center;
 
     background-color: transparent;
+    border: none;
     border-radius: 0.5rem;
     padding: 0.2em 2em;
-    margin-top: 5em;
+    margin: auto 0 3rem 0;
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
 }
 
-.main button:hover {
-    background-color: rgb(143, 29, 33, 0.25);
-    border: 0.2rem solid #8F1D21;
-}
-
-.button-title,
 .button-arrow {
     margin: 0 0.1em;
     font-size: 3rem;
-}
-
-.button-arrow {
-    filter: invert(11%) sepia(52%) saturate(5821%) hue-rotate(348deg) brightness(92%) contrast(88%);
-    width: 3rem;
+    width: clamp(3rem, 1rem + 5vw , 5rem);
     height: auto;
     animation: updown 2s ease infinite;
 }
 
-.main button:hover .dark-button-arrow {
+.main button:hover .button-arrow {
+    filter: invert(11%) sepia(52%) saturate(5821%) hue-rotate(348deg) brightness(92%) contrast(88%);
+}
+
+.dark-button-arrow {
     filter: invert(86%) sepia(0%) saturate(4569%) hue-rotate(334deg) brightness(103%) contrast(68%);
 }
 
-.main button:hover .light-button-arrow {
+.light-button-arrow {
     filter: invert(6%) sepia(8%) saturate(2127%) hue-rotate(278deg) brightness(99%) contrast(90%);
 }
 
 @keyframes updown {
     0% {
-        transform: translateY(5%);
+        transform: translateY(0%);
     }
 
     50% {
-        transform: translateY(15%);
+        transform: translateY(20%);
     }
 
     100% {
-        transform: translateY(5%);
+        transform: translateY(0%);
     }
 }
 
